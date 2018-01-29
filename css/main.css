@@ -1,0 +1,36 @@
+body{
+  margin: 0;
+  font-family: 'Poiret One', cursive;
+}
+
+#logo{
+  height: 40vh;
+  width: 80%;
+}
+
+#name{
+  color: #ab0094;
+  font-size: 500%;
+  font-weight: bold;
+  margin-left: 10%;
+  text-align: center;
+}
+
+#slogan{
+  font-size: 300%;
+  color: #ab0094;
+  margin-left: 10%;
+  text-align: center;
+}
+
+.btn{
+  border: 2px solid #780475;
+  color: #780475;
+  font-size: 200%;
+  font-weight: bold;
+  height: 10vh;
+  margin-left: 3%;
+  margin-top: 10%;
+  text-align: center;
+  width:40%;
+}
