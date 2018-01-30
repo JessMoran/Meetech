@@ -109,16 +109,3 @@ h1{
   border: 3px solid #780475;
   color: #780475;
 }
-
-/*Estilos vista 4*/
-.navbar{
-  background-color: #c4279a;
-  color:#fff;
-  height: 18vh;
-}
-
-.brand{
-  height: 15vh;
-  padding: 0;
-  width: 20%;
-}
