@@ -1,100 +1,63 @@
-.container-fluid {
-  padding: 0;
+body{
   margin: 0;
+  background-color: #d3b3ce;
+  font-family:font-family: font-family: 'Poiret One', cursive;
+}
+.container-fluid{
+  padding:0;
 }
 
 .navbar{
-  background-color: rgb(184,97,169);
-  color:rgb(255,255,255);
-  height: 18vh;
+  background-color:#fff;
+  height: 20vh;
+}
+.btn-event{
+  background: #780475;
+  border: 2px solid #780475;
+  color: #fff;
+  font-size: 90%;
+  font-weight: bold;
+  height: 8vh;
+  margin-left: 3%;
+  text-align: center;
+  text-decoration: none;
+  width:40%;
+}
+
+.btn-event:hover{
+  background-color: #fff;
+  border: 3px solid #780475;
+  color: #780475;
 }
 
 .brand{
+  margin-left: 10%;
   height: 15vh;
-  padding: 0;
   width: 20%;
 }
+/*Estilos tarjetas info*/
 
-/* Estilos del carrusel */
+/*Estilos modal*/
 
-.carousel {
-  width: 50vw;
+#modal-container,#event,#tag,#description,#date{
+  border: 2px solid #780475;
 }
 
-.contenedor-carousel{
- margin: auto;
- width: 70%;
- max-width: 1200px;
- position: relative;
+.btn-prpl{
+  background: #fff;
+  border: 2px solid #780475;
+  color: #780475;
+  font-size: 90%;
+  font-weight: bold;
+  height: 8vh;
+  margin-left: 3%;
+  text-align: center;
+  text-decoration: none;
+  width:40%;
 }
 
-
-.carousel{
- text-align: center
- width: auto;
- height: auto;
-}
-
-.carousel div img {
- width: 100%;
-}
-
-
-.carousel-content{
- margin-top: 2%;
- display: none;
-}
-
-.carousel-content.active {
- display: block;
-}
-
-.controls{
- text-align: center;
- margin-top: 5px;
- margin-bottom: 15px;
-}
-
-a{
- text-decoration: none;
-}
-
-.previous, .next {
- width: 40px;
- height: 40px;
- background: rgba(255,255,255,.7);
- position: absolute;
- border-radius: 50%;
- top: 50%;
- line-height: 40px;
- font-size: 24px;
- font-weight: bold;
- cursor: pointer;
-
-}
-
-.previous{
- left: 10px;
-}
-
-
-.next{
- right: 10px;
-}
-
-
-.controls button {
- background: #415066;
- border: #3574a0;
- border-style: solid;
- border-width: 2px;
- border-radius: 50%;
- height: 15px;
- width: 15px;
- margin: 0 4px;
- cursor: pointer;
-}
-
-.controls button.active{
- background-color: purple;
+.btn-prpl:hover{
+  background-color: #780475;
+  border: 3px solid #780475;
+  color: #fff;
 }
