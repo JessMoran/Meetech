@@ -1,93 +1,44 @@
-$('.carousel').carousel()
+var config = {
+  apiKey: "AIzaSyCWfz5QVHhdbaYA0qZxhrk74Dqv4cd3yZ4",
+  authDomain: "meetch-19dcf.firebaseapp.com",
+  databaseURL: "https://meetch-19dcf.firebaseio.com",
+  projectId: "meetch-19dcf",
+  storageBucket: "",
+  messagingSenderId: "738275435756"
+};
+firebase.initializeApp(config);
 
-
-
-
-
-
-/*$(document).ready(function(){
-	var $btns = $(".control-btn");
-	//console.log($btns);
-	$btns.click(loadImage);
-	var target = 0;
+$('#google').click(function(){
+  authGoogle();
 });
 
-
-
-var loadImage = function (){
-	/*console.log(this.dataset);
-	console.log(this.dataset.target);*/
-	/*var $titulo = $("h1");
-	var $target = $(this).data("target");
-	displayImage($target);
-	changeColorButton($target);
-	changeTitle($target);
+function authGoogle (){
+  var provider = new firebase.auth.GoogleAuthProvider();
+  authentication(provider);
 }
 
+function authentication(provider){
+  firebase.auth().signInWithPopup(provider).then(function(result) {
+    // This gives you a Google Access Token. You can use it to access the Google API.
+    var token = result.credential.accessToken;
+    // The signed-in user info.
+    var user = result.user;
+    console.log(result);
+    // ...
+  }).catch(function(error) {
+    // Handle Errors here.
+    console.log(error);
+    var errorCode = error.code;
+    console.log(errorCode);
+    var errorMessage = error.message;
+    console.log(errorMessage);
+    // The email of the user's account used.
+    var email = error.email;
+    console.log(email);
+    // The firebase.auth.AuthCredential type that was used.
+    var credential = error.credential;
+    console.log(credential);
+    // ...
+  });
 
-/*  console.log($(".active"));
-	console.log($("div.active"));
-	console.log($("button.active"));*/
-	/*var $actualSlide = $("div.active");
-	//console.log($("div[data-slide="+ $target +"]"));
-	var $newImage = $("div[data-slide="+$target+"]");
-	$actualSlide.removeClass("active");
-	$newImage.addClass("active");
-}*/
-
-
-/*var displayImage = function (target){
-	var $actualSlide = $("div.active");
-	var $newImage = $("div[data-slide="+target+"]");
-	$actualSlide.removeClass("active");
-	$newImage.addClass("active");
-};
-
-
-var changeColorButton = function (target){
-	var $actualButton = $("button.active");
-
-	var $newButton = $("button[data-target="+ target+ "]");
-	$actualButton.removeClass("active");
-	$newButton.addClass("active");
-};
-
-var changeTitle = function(target){
-	var $titulo = $("h1");
-	var $newTitle = $("h1");
-	if (target = 1) {
-		$newTitle.text("Willkommen");
-	}else if($target = 2){
-		$newTitle.text("Bienvenue");
-	}else if ($target = 3) {
-		$newTitle.text("Welcome");
-	}else if ($target = 4) {
-		$newTitle.text("Benvenuto");
-	}
-};
-
-var previousImage = function (e){
-	e.preventDefault();
-	target = target -1;
-	target = (target < 0) ? 4: target;
-	displayImage(target);
-};
-
-var nextImage = function (e){
-	e.preventDefault();
-	target = target + 1;
-	target = (target > 4) ? 0: target;
-	displayImage(target);
-};
-
-/*var previousBtn = function (e) {
-  var $actPrev = $("#prev") {
-    if (previousImage === true) {
-      $actPrev.active;
-    }
-  }
 }
-
-var nextBtn = function (e) {
-  var $actNxt = $("#nxt")
-}*/
