@@ -122,18 +122,6 @@ h2{
 }
 
 /*Estilos vista 4*/
-.navbar{
-  background-color: #c4279a;
-  color:#fff;
-  height: 17vh;
-}
-
-.brand{
-  height: 12vh;
-  margin: -5%;
-  width: 100%;
-}
-
 #form-navbar{
   margin-top: 30%;
   height: 5vh;
@@ -152,4 +140,19 @@ h2{
   background-color: #fff;
   border: 3px solid #780475;
   color: #780475;
+}
+
+#list{
+  border: #fff;
+}
+.navbar{
+  background-color: #c4279a;
+  color:#fff;
+  height: 17vh;
+}
+
+.brand{
+  height: 12vh;
+  margin: -5%;
+  width: 100%;
 }
