@@ -8,7 +8,7 @@ var config = {
 };
 firebase.initializeApp(config);
 
-$('ready').click(function(){
+$('#ready').click(function(){
   authGoogle();
 });
 
