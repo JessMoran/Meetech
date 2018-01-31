@@ -1,5 +1,6 @@
 /*Funcionalidad pantalla principal*/
 /*Variables globales para uso de las funcionalidades posteriores*/
+var events =[];
 var $descriptionInput = $("#description");
 var $btnEvent = $("#create");
 
@@ -11,6 +12,7 @@ var $dateInput =$("#date");
 function loadPage(){
   $descriptionInput.keyup(validateEvent);
   $btnEvent.click(addEvent);
+  $btnEvent.click(paintEvent);
 }
 
 /*funcion que valida que el usuario haya llenado los campos del modal*/
@@ -37,7 +39,35 @@ function addEvent(e){
     "date": date,
     "description": description
     };
-console.log(eventCreate);
+    events.push(eventCreate);
+    paintEvent(eventCreate);
+    console.log(events,eventCreate);
 }
+
+function paintEvent (eventCreate){
+  var $newEvent = $("<div />");
+  var $newtittle = $("<h3 />");
+  var $description = $("<p />");
+  var $btn = $("<a />");
+  var $btn2 = $("<a />");
+
+  $newEvent.addClass("thumbnail");
+  $btn.addClass("btn btn-primary btn-card");
+  $btn2.addClass("btn btn-default btn2-card");
+
+   $newEvent.append($newtittle);
+   $newEvent.append($description);
+   $newEvent.append($btn);
+   $newEvent.append($btn2);
+
+   $description.text(eventCreate.name);
+   $description.text(eventCreate.date);
+   $description.text(eventCreate.description);
+
+//se agrega el elemento creado por el DOM a un elemento que está en HTML
+  $("#container-cards").prepend($newEvent);
+
+}
+
 
 $(document).ready(loadPage);

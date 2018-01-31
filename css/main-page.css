@@ -83,7 +83,7 @@ hr {
   color: #fff;
 }
 
-.thumbnail{
+.thumbnail,.new-cards{
   border: 1px solid #780475;
   height: 95vh;
   width: 90%
@@ -125,4 +125,8 @@ hr {
   background-color: #780475;
   border: 3px solid #780475;
   color: #fff;
+}
+
+.new-cards{
+
 }
