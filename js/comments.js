@@ -32,7 +32,7 @@ function addComment(e){
   }
   // enviamos los elemntos escritos por el usuario a un array
   comments.push(commentObj)
-  //console.log(comments,commentObj);
+  console.log(comments,commentObj);
   //se llama a la funcion "paintComments" desde aquí para que obtenga el valor del texto ingresado por el usuario
   paintComments(commentObj);
 }
@@ -44,10 +44,10 @@ function clean (){
 
 //creando elementos por el DOM
 function paintComments (commentObj){
-  var $newcomment = $("<div />",{
-    "class": "comments"
-  });
+  var $newcomment = $("<div />");
   var $textComment = $("<p />");
+
+  $newcomment.addClass("comments-container");
 
  $newcomment.append($textComment)
  $textComment.text(commentObj.comment);
