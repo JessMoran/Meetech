@@ -15,7 +15,7 @@ function loadPage(){
 
 /*funcion que valida que el usuario haya llenado los campos del modal*/
 function validateEvent () {
-  if($(this).val().trim().length > 19) {
+  if($(this).val().trim().length > 10) {
     $btnEvent.removeAttr("disabled");
   } else {
     $btnEvent.attr("disabled" , true);
