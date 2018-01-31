@@ -9,9 +9,11 @@ var config = {
 };
 firebase.initializeApp(config);
 
-$('#google').click(function(){
+$('#google').click(function(e){
   authGoogle();
+  e.preventDefault();
 });
+
 
 function authGoogle (){
   var provider = new firebase.auth.GoogleAuthProvider();
@@ -19,11 +21,12 @@ function authGoogle (){
 }
 
 function authentication(provider){
-  firebase.auth().signInWithPopup(provider).then(function(result) {
+  firebase.auth().signInWithPopup(provider).then(function(result){
     // This gives you a Google Access Token. You can use it to access the Google API.
     var token = result.credential.accessToken;
     // The signed-in user info.
     var user = result.user;
+    window.location.href = "view3.html";
     console.log(result);
     // ...
   }).catch(function(error) {
