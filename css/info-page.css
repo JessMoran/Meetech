@@ -40,9 +40,14 @@ p{
 }
 
 /*Estilos input comentarios*/
+
+.input-container{
+  float: right;
+}
+
 .input-group{
   margin-top: 5%;
-
+  width: 70%;
 }
 
 .btn-default{
@@ -50,6 +55,10 @@ p{
   color:#fff;
 }
 
-.comments{
-  background-color: red;
+.comments-container{
+  background-color: #fff;
+  font-size: 200%;
+  height: 5vh;
+  margin-top: 5%;
+  width: 60%;
 }
