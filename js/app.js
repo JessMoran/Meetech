@@ -1,3 +1,4 @@
+/*Funcionalidad Firebase*/
 var config = {
   apiKey: "AIzaSyCWfz5QVHhdbaYA0qZxhrk74Dqv4cd3yZ4",
   authDomain: "meetch-19dcf.firebaseapp.com",

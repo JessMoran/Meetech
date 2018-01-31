@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Meetech</title>
+    <link rel="icon" type="image/png" href="../assets/images/logo.png">
+    <link rel="stylesheet" href="../assets/icons/css/font-awesome.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&amp;subset=cyrillic,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main-page.css">
+  </head>
+<!-- Enlaces -->
+  <body>
+    <div class="container-fluid col-sm-12 col-lg-12">
+      <!-- Nav -->
+        <nav class="navbar navbar-default">
+          <div class="container-fluid">
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#">
+              <img class="brand"alt="Brand" src="../assets/images/logo.png">
+              </a>
+            </div>
+            <form class="navbar-form navbar-left" role="search">
+              <div class="form-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <button type="submit" class="btn btn-default">Submit</button>
+              </div>
+            </form>
+          </div>
+        </nav>
+          <div class="row">
+            <div class="col-lg-3 col-lg-push-9">
+              <button type="submit" class="btn btn-default btn-event" data-toggle="modal" data-target="#modalCreate"> + Registra tu meetup</button>
+            </div>
+          </div>
+
+
+        <!-- modal -->
+        <div id="modalCreate" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-dialog" role="document">
+            <div id="modal-container"class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+
+                <form class="" action="index.html" method="post">
+                  <input id="event"type="text" class="form-control" placeholder="**Nombre del evento">
+                </div>
+                <div class="modal-body">
+                  <div class="form-group">
+                    <div class="form-group">
+                      <div class="dropdown">
+                        <button id="tag"class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                          Tags
+                          <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">UX</a></li>
+                          <li><a href="#">Frameworks</a></li>
+                          <li><a href="#">JS</a></li>
+                          <li><a href="#">PHP</a></li>
+                        </ul>
+                      </div>
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">**Fecha:</label>
+                        <input id="date"type="text" class="form-control" value="//">
+                      </div>
+                    <label for="comment">**Descripcion de evento:</label>
+                    <textarea id="description" class="form-control" rows="5" ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <div class="row">
+                  <div class="col-sm-6 col-lg-6 col-lg-pull-3">
+                    <p>Agrega una imagen</p>
+                    <button id="add" type="button" class="btn btn-primary btn-card">Add</button>
+                  </div>
+
+                </div>
+
+                <p>** Campos obligatorios</p>
+                <button type="button" class="btn btn-default btn2-card" data-dismiss="modal">Close</button>
+                <button id="create" type="button" class="btn btn-primary btn-card" disabled="disabled">Create</button>
+              </div>
+            </div><!-- /.modal-content -->
+          </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+
+        <!-- Cards -->
+        <div class="row">
+          <div class="col-sm-6 col-lg-4 col-lg-push-1">
+            <div class="thumbnail">
+              <img src="../assets/images/ux.png" alt="network">
+              <div class="caption">
+                <h3>UX Mexico</h3>
+                <p>Nuestros eventos consisten principalmente de Meetups con temáticas variadas del mundo del Hardware y el Software. A pesar de que la filosofia de NodeBotsMX se basa en programar sistemas embebidos con Javascript, hemos logrado trascender y abarcar temas que involucran  desarrollo de proyectos, pláticas y talleres con Ruby, Python, Assembly, programas de diseño de CAD para electrónica (Kicad, Eagle, Altium, Inteligencia artificial, entre otros. </p>
+                <p><a href="#" class="btn btn-primary btn-card" role="button">Going</a> <a href="../views/view4.html" class="btn btn-default btn2-card" role="button">More info</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-lg-4 col-lg-push-1">
+            <div class="thumbnail">
+              <img src="../assets/images/network.png" alt="network">
+              <div class="caption">
+                <h3>Talent Network</h3>
+                <p>Nuestros eventos consisten principalmente de Meetups con temáticas variadas del mundo del Hardware y el Software. A pesar de que la filosofia de NodeBotsMX se basa en programar sistemas embebidos con Javascript, hemos logrado trascender y abarcar temas que involucran  desarrollo de proyectos, pláticas y talleres con Ruby, Python, Assembly, programas de diseño de CAD para electrónica (Kicad, Eagle, Altium, Inteligencia artificial, entre otros. </p>
+                <p><a href="" class="btn btn-primary btn-card" role="button">Going</a> <a href="../views/view5.html" class="btn btn-default btn2-card" role="button">More info</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- Enlaces -->
+    <script src="../js/jquery-3.3.1.min.js" charset="utf-8"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/function.js"></script>
+  </body>
+</html>
