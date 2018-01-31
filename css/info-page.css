@@ -1,0 +1,55 @@
+body{
+  margin: 0;
+  background-color: #d3b3ce;
+  font-family: 'Poiret One', cursive;
+}
+p{
+  color: #780475;
+}
+
+.container-fluid{
+  padding:0;
+}
+
+.navbar{
+  background-color:#fff;
+  height: 20vh;
+}
+.btn-add{
+  background: #780475;
+  border: 2px solid #780475;
+  color: #fff;
+  font-size: 150%;
+  font-weight: bold;
+  height: 7vh;
+  text-align: center;
+  text-decoration: none;
+  width:15%;
+}
+
+.btn-add:hover{
+  background-color: #fff;
+  border: 3px solid #780475;
+  color: #780475;
+}
+
+.brand{
+  margin-left: 10%;
+  height: 15vh;
+  width: 20%;
+}
+
+/*Estilos input comentarios*/
+.input-group{
+  margin-top: 5%;
+
+}
+
+.btn-default{
+  background-color: #780475;
+  color:#fff;
+}
+
+.comments{
+  background-color: red;
+}
